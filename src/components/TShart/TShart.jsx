@@ -1,13 +1,16 @@
-import React from 'react';
-import './TShart.css';
+import React from "react";
+import "./TShart.css";
 
-const TShart = ({tshart}) => {
-    const {picture, name, gender,price} = tshart;
+const TShart = ({ tshart, handleAddToCart }) => {
+    const { picture, name, gender, price, _id } = tshart;
     return (
-        <div className='tshart-info'>
+        <div className="tshart-info">
             <img src={picture} alt="" />
-            <h3>{name}</h3>
-            <p>Price : ${price}</p>
+            <div>
+                <h3>{name}</h3>
+                <p>Price : ${price}</p>
+            </div>
+            <button onClick={() => handleAddToCart(tshart)}>Buy Now</button>
         </div>
     );
 };
