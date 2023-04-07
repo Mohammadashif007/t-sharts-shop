@@ -1,0 +1,14 @@
+.home-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.tshart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px;
+}
+.tshart-container img {
+    width: 100%;
+}

@@ -1,0 +1,8 @@
+.tshart-info {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 15px;
+}
+.tshart-info img {
+    border-radius: 15px;
+}
